@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  max-width: 100%;
+}
+
+#right-wheel,
+#left-wheel,
+#hat {
+  transform-box: fill-box;
+}
+
+#right-wheel,
+#left-wheel {
+  transform-origin: center;
+}
+
+#right-wheel,
+#left-wheel {
+  animation: spin 2s linear infinite;
+}
+
+#hat {
+  animation: flip 1s ease-in-out infinite alternate;
+}
+
+#bike-man {
+  animation: bike 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes bike {
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
+@keyframes flip {
+  to {
+    transform: translateY(10%) rotateZ(7deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
