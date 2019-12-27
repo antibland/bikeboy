@@ -13,3 +13,7 @@
 - Make the `SVG` responsive, because that's the default these days.
 
 Have a look [here](https://antibland.github.io/bikeboy/).
+
+![bike animation][cover]
+
+[cover]: https://raw.githubusercontent.com/antibland/bikeboy/master/bikeboy.gif
